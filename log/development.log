@@ -76,3 +76,24 @@ ActiveRecord::UnknownAttributeError (unknown attribute 'utf8' for Post.):
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (43.4ms)
+
+
+Started GET "/posts/new" for 67.244.19.121 at 2018-07-31 14:32:31 +0000
+Cannot render console from 67.244.19.121! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.7ms)
+
+SyntaxError (/home/Awilmerding1/refactoring-views-with-helpers-reading-v-000/app/views/posts/new.html.erb:1: syntax error, unexpected tLABEL
+... form_for(@post), enforce_utf8: false do |f| @output_buffer....
+...                               ^
+/home/Awilmerding1/refactoring-views-with-helpers-reading-v-000/app/views/posts/new.html.erb:10: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/posts/new.html.erb:1: syntax error, unexpected tLABEL
+  app/views/posts/new.html.erb:10: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.7ms)
