@@ -171,3 +171,4 @@ Processing by PostsController#show as HTML
   Parameters: {"id"=>"2"}
   [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
   Rendered posts/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 48ms (Views: 33.6ms | ActiveRecord: 0.4ms)
